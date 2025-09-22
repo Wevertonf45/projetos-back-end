@@ -6,7 +6,7 @@ import cors from 'cors'
 
 const app = express()
 
-app.use(cors())
+app.use(cors({ origin: 'https://formdelogin.vercel.app', credentials: true }))
 app.use(express.json())
 app.use('/', publicRoute)
 app.use('/', auth, privateRoute)
