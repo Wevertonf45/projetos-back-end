@@ -6,6 +6,10 @@
             "use": "@vercel/node"
         }
     ],
+    "env":{
+        "DATABASE_URL": "mysql://root@localhost:3306/usuarios",
+        "JWT_SECRET": "acb81a0d579e4a2619d88dbc6d7e49e756b63ee20da5cf13157d906f205b0ab2"
+    },
     "routes": [
         {
             "src": "/(.*)",
